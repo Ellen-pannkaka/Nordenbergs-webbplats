@@ -1,0 +1,182 @@
+body {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: #fff;
+  overflow-x: hidden;
+  margin: 0;
+  background-color: white;
+}
+
+/* NAVIGATION */  
+nav{ 
+  padding: 10px;
+  display: flex;
+  background-color: #124170;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+nav ul li {
+  list-style: none;
+}
+.nav{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+}
+.nav ul{ /* Ordnar länkarna med jämt mellanrum i menyn på dator */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navleft{
+  padding: 0 15%;
+  margin-top: 10px;
+}
+.link{ /* Länkarna i menyn till de olika sidorna */
+  text-decoration: none;
+  color: #fff; 
+  font-weight: bold;
+  font-size: 20px;
+}
+.logga img{
+  width: 100%;
+  padding: 5px;
+}
+.overlay{ /* Navigationsmeny som bara syns i mobilläge, inte på datorn */
+  display: none;
+}
+
+
+/* HOMEPAGE */
+.front{
+  background-image: url("nbg1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.front h1{
+  font-size: 50px;
+  padding: 10px 0 50vh 0;
+}
+.front h3{
+  font-size: 30px;
+  padding: 50px 0 10px 0;
+}
+.title{
+  margin: auto;
+  color: #124170;
+}
+.box{
+  background-color: #1D5A4B;
+  opacity: 85%;
+  margin: 20px;
+  padding: 30px;
+  max-height: 200px;
+}
+.box h3{
+  opacity: 100%;
+  padding: 10px;
+}
+.aktuellt{
+  background-color: white;
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  padding-top: 30vh;
+  color: black;
+}
+.aktuellt h1{
+  font-size: 50px;
+}
+.oppethus{
+  background-color: #1D5A4B;
+  height: 300px;
+}
+.oppethus h1{
+  font-size: 50px;
+  margin: auto;
+  width: 30%;
+  padding: 50px;
+}
+.oppethus p{
+  margin: 0 50px;
+  font-size: 20px;
+}
+
+
+/* FOOTER */
+footer{ 
+  background-color: #124170;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 15% 28% 29% 28%;
+}
+footer ul{
+  list-style: none;
+  padding: 5px 0 0 10px;
+}
+footer h3{
+  padding: 5px 0 0 10px;
+}
+footer img{
+  width: 80%;
+  padding: 20px;
+}
+
+/* USEFUL */
+.middle{
+  margin: auto;
+}
+.span2{
+  grid-column: span 2;
+}
+.span3{
+  grid-column: span 3;
+}
+
+
+
+@media screen and (max-width: 600px){
+  .nav{ /* Tar bort navigationsmeny mellan sidorna i mobilläge */
+    display: none;
+  }
+  .overlay{ /* Navigation som bara syns i mobilläge med titel */
+    overflow: hidden;
+      display: flex;
+      width: 90%;
+      justify-content: space-between;
+    align-items: center;
+  }
+  .overlay img{ /* Navigationsknapp för mobilläge */
+    width: 50px;
+    margin: 0 20px;
+    float: right;
+  }
+  .overlay h2{
+    width: 100%;
+  }
+  .overlay #overlaycontent{ /* Länkar för navigationsmenyn i mobilläge som bara syns när script aktiveras */
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #7e685a;
+    width: 100%;
+    top: 80px;
+  }
+  .overlay a{
+    display: block;
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #7e685a;
+    padding: 10px;
+  }
+}
