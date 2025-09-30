@@ -50,7 +50,28 @@ nav ul li {
 .overlay{ /* Navigationsmeny som bara syns i mobilläge, inte på datorn */
   display: none;
 }
-
+.content{
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  background-color: #26667F;
+}
+.content a {
+  color: #fff;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+.linka:hover .content{
+  display: block;
+}
+.link:hover{
+  color: #DDF4E7;
+}
+.content a:hover{
+  color: #DDF4E7;
+  background-color: #21586e;
+}
 
 /* HOMEPAGE */
 .front{
