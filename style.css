@@ -9,6 +9,8 @@ body {
   background-color: white;
 }
 
+
+
 /* NAVIGATION */  
 nav{ 
   padding: 10px;
@@ -73,6 +75,8 @@ nav ul li {
   background-color: #21586e;
 }
 
+
+
 /* HOMEPAGE */
 .front{
   background-image: url("nbg1.png");
@@ -110,8 +114,12 @@ nav ul li {
   background-color: white;
   display: grid;
   grid-template-columns: 33% 34% 33%;
-  padding-top: 30vh;
+  padding: 30vh 0;
   color: black;
+}
+.aktuellt img{
+  width: 95%;
+  padding: 10px;
 }
 .aktuellt h1{
   font-size: 50px;
@@ -130,6 +138,17 @@ nav ul li {
   margin: 0 50px;
   font-size: 20px;
 }
+.instagram{
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+}
+.instagram:hover{
+  text-decoration: underline;
+  color: darkgrey;
+}
+
+
 
 
 /* FOOTER */
