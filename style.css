@@ -79,13 +79,16 @@ nav ul li {
 
 /* HOMEPAGE */
 .front{
-  background-image: url("nbg1.png");
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
   height: 100vh;
   display: grid;
   grid-template-columns: 50% 50%;
+}
+.title{
+  margin: auto;
+  color: #124170;
 }
 .front h1{
   font-size: 50px;
@@ -94,10 +97,6 @@ nav ul li {
 .front h3{
   font-size: 30px;
   padding: 50px 0 10px 0;
-}
-.title{
-  margin: auto;
-  color: #124170;
 }
 .box{
   background-color: #1D5A4B;
@@ -147,8 +146,35 @@ nav ul li {
   text-decoration: underline;
   color: darkgrey;
 }
+html, body{
+width:100%;
+overflow-x:hidden;
+}
 
 
+/* ALL */
+.front h2{
+  font-size: 50px;
+  padding: 30vh 0 0 0;
+  margin: auto;
+  color: whitesmoke;
+}
+.para{
+  color: black;
+  padding: 10px 10%;
+}
+.para h3{
+  font-size: 25px;
+}
+.para p{
+  font-size: 20px;
+}
+.para a{
+  color: black;
+}
+.para a:hover{
+  color: darkblue;
+}
 
 
 /* FOOTER */
@@ -165,10 +191,24 @@ footer ul{
 footer h3{
   padding: 5px 0 0 10px;
 }
-footer img{
+.nbg img{
   width: 80%;
   padding: 20px;
 }
+.sociala{
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+}
+.sociala a:hover{
+  text-decoration: underline;
+  color: whitesmoke;
+}
+.sociala img{
+  width: 25px;
+}
+
+
 
 /* USEFUL */
 .middle{
@@ -184,29 +224,27 @@ footer img{
 
 
 @media screen and (max-width: 600px){
+  /* NAVIGATION */
   .nav{ /* Tar bort navigationsmeny mellan sidorna i mobilläge */
     display: none;
   }
   .overlay{ /* Navigation som bara syns i mobilläge med titel */
     overflow: hidden;
-      display: flex;
-      width: 90%;
-      justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 95%;
   }
   .overlay img{ /* Navigationsknapp för mobilläge */
     width: 50px;
-    margin: 0 20px;
-    float: right;
-  }
-  .overlay h2{
-    width: 100%;
+    margin: 0 10px;
+
   }
   .overlay #overlaycontent{ /* Länkar för navigationsmenyn i mobilläge som bara syns när script aktiveras */
     display: none;
     position: absolute;
     right: 0;
-    background-color: #7e685a;
+    background-color: #26667F;
     width: 100%;
     top: 80px;
   }
@@ -216,7 +254,42 @@ footer img{
     color: #fff; 
     font-weight: bold;
     font-size: 20px;
-    background-color: #7e685a;
     padding: 10px;
   }
+nav{ 
+  padding: 10px;
+  display: flex;
+  background-color: #124170;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  }
+
+/* ALL */
+.front{
+  height: 30vh;
+}
+.front h2{
+  display: none;
+}
+.para h3{
+  font-size: 23px;
+}
+.para p{
+  font-size: 18px;
+}
+
+  /* FOOTER */
+  footer{
+    width: 100%;
+    grid-template-columns: 45% 55%;
+    height: 300px;
+    font-size: 12px;
+  }
+  .nbg img{
+  width: 50%;
+  padding: 20px;
+}
 }
