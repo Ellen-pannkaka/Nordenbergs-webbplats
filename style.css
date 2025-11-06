@@ -292,6 +292,9 @@ nav{
 .para p{
   font-size: 18px;
 }
+  .face 2{
+  grid-template-columns: 100%;
+  }
 
   /* FOOTER */
   footer{
@@ -306,3 +309,4 @@ nav{
 }
 
 }
+
