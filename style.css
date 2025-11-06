@@ -235,7 +235,7 @@ footer h3{
 
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 760px){
   /* NAVIGATION */
   .nav{ /* Tar bort navigationsmeny mellan sidorna i mobilläge */
     display: none;
@@ -304,4 +304,5 @@ nav{
   width: 50%;
   padding: 20px;
 }
+
 }
