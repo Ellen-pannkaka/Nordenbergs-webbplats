@@ -168,12 +168,20 @@ overflow-x:hidden;
 }
 .para p{
   font-size: 20px;
+  padding: 0px 10px 0px 0px;
 }
 .para a{
   color: black;
 }
 .para a:hover{
   color: darkblue;
+}
+.para img{
+  max-height: 150px;
+  clip-path: circle(50%);
+}
+.para h4{
+  font-size: 20px;
 }
 
 
@@ -219,6 +227,10 @@ footer h3{
 }
 .span3{
   grid-column: span 3;
+}
+.face2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 
