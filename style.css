@@ -103,7 +103,7 @@ nav ul li {
   opacity: 85%;
   margin: 20px;
   padding: 30px;
-  max-height: 200px;
+  max-height: 250px;
 }
 .box h3{
   opacity: 100%;
@@ -114,13 +114,14 @@ nav ul li {
   display: grid;
   grid-template-columns: 33% 34% 33%;
   color: black;
-  position: static;
+  padding: 20px;
 }
 .aktuellt img{
   width: 95%;
   padding: 10px;
 }
 .aktuellt h1{
+  padding-top: 30px;
   font-size: 50px;
 }
 .oppethus{
@@ -221,6 +222,12 @@ footer h3{
 /* USEFUL */
 .middle{
   margin: auto;
+  text-align: center;
+}
+.middler img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .span2{
   grid-column: span 2;
@@ -308,6 +315,9 @@ nav{
   }
   .front h2{
     display: none;
+  }
+  .para{
+    padding: 10px;
   }
   .para h3{
     font-size: 23px;
