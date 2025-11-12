@@ -186,11 +186,9 @@ background-color: whitesmoke;
   font-size: 20px;
 }
 .card{
-  background-color: #26667F;
+  background-color: #7cbfd9;
   width: 80%;
-  border: 15px solid #26667F;
-  opacity: 80%;
-  color: white;
+  border: 15px solid #7cbfd9;
 }
 
 
@@ -250,11 +248,12 @@ footer h3{
 .face5{
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  padding: 10px;
-  width: 100%;
 }
 .face5 h2{
   padding: 15px;
+}
+.face5 a{
+  padding: 10px;
 }
 .span5{
   grid-column: span 5;
@@ -331,13 +330,13 @@ nav{
   /* ALL */
   .front{
     grid-template-columns: 100%;
-    height: 30vh;
+    height: 25vh;
   }
   .front h2{
     display: none;
   }
   .para{
-    padding: 10px;
+    padding: 20px;
   }
   .para h3{
     font-size: 23px;
@@ -350,6 +349,16 @@ nav{
     }
   .aktuellt{
   padding: 5px;
+  }
+  .face5{
+    grid-template-columns: 50% 50%;
+  }
+  .span5{
+    grid-column: span 1;
+    background-color: #7cbfd9;
+  }
+  .card{
+    grid-column: span 2;
   }
 
 
