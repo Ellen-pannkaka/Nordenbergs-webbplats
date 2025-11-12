@@ -1,0 +1,368 @@
+body {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: #fff;
+  overflow-x: hidden;
+  margin: 0;
+  background-color: white;
+}
+
+
+
+/* NAVIGATION */  
+nav{ 
+  padding: 10px;
+  display: flex;
+  background-color: #124170;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+nav ul li {
+  list-style: none;
+}
+.nav{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+}
+.nav ul{ /* Ordnar länkarna med jämt mellanrum i menyn på dator */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navleft{
+  padding: 0 15%;
+  margin-top: 10px;
+}
+.link{ /* Länkarna i menyn till de olika sidorna */
+  text-decoration: none;
+  color: #fff; 
+  font-weight: bold;
+  font-size: 20px;
+}
+.logga img{
+  width: 100%;
+  padding: 5px;
+}
+.overlay{ /* Navigationsmeny som bara syns i mobilläge, inte på datorn */
+  display: none;
+}
+.content{
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  background-color: #26667F;
+}
+.content a {
+  color: #fff;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+.linka:hover .content{
+  display: block;
+}
+.link:hover{
+  color: #DDF4E7;
+}
+.content a:hover{
+  color: #DDF4E7;
+  background-color: #21586e;
+}
+
+
+
+/* HOMEPAGE */
+.front{
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.title{
+  margin: auto;
+  color: #124170;
+}
+.front h1{
+  font-size: 50px;
+  padding: 10px 0 50vh 0;
+}
+.front h3{
+  font-size: 30px;
+  padding: 50px 0 10px 0;
+}
+.box{
+  background-color: #1D5A4B;
+  opacity: 85%;
+  margin: 20px;
+  padding: 30px;
+  max-height: 250px;
+}
+.box h3{
+  opacity: 100%;
+  padding: 10px;
+}
+.aktuellt{
+  background-color: white;
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  color: black;
+  padding: 20px;
+}
+.aktuellt img{
+  width: 95%;
+  padding: 10px;
+}
+.aktuellt h1{
+  padding-top: 30px;
+  font-size: 50px;
+}
+.oppethus{
+  background-color: #1D5A4B;
+  height: 300px;
+}
+.oppethus h1{
+  font-size: 50px;
+  margin: auto;
+  width: 30%;
+  padding: 50px;
+}
+.oppethus p{
+  margin: 0 50px;
+  font-size: 20px;
+}
+.instagram{
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+}
+.instagram:hover{
+  text-decoration: underline;
+  color: darkgrey;
+}
+html, body{
+width:100%;
+overflow-x:hidden;
+background-color: whitesmoke;
+}
+
+
+/* ALL */
+.front h2{
+  font-size: 50px;
+  padding: 30vh 0 0 0;
+  margin: auto;
+  color: whitesmoke;
+}
+.para{
+  color: black;
+  padding: 5px 10%;
+}
+.para h3{
+  font-size: 25px;
+}
+.para p{
+  font-size: 20px;
+  padding: 0px 10px 0px 0px;
+}
+.para a{
+  color: black;
+}
+.para a:hover{
+  color: darkblue;
+}
+.para img{
+  max-height: 150px;
+  clip-path: circle(50%);
+}
+.para h4{
+  font-size: 20px;
+}
+.card{
+  background-color: #26667F;
+  width: 80%;
+  border: 15px solid #26667F;
+  opacity: 80%;
+  color: white;
+}
+
+
+/* FOOTER */
+footer{ 
+  background-color: #124170;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 15% 28% 29% 28%;
+}
+footer ul{
+  list-style: none;
+  padding: 5px 0 0 10px;
+}
+footer h3{
+  padding: 5px 0 0 10px;
+}
+.nbg img{
+  width: 80%;
+  padding: 20px;
+}
+.sociala{
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+}
+.sociala a:hover{
+  text-decoration: underline;
+  color: whitesmoke;
+}
+.sociala img{
+  width: 25px;
+}
+
+
+
+/* USEFUL */
+.middle{
+  margin: auto;
+  text-align: center;
+}
+.middler img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.span2{
+  grid-column: span 2;
+}
+.span3{
+  grid-column: span 3;
+}
+.face2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.face5{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  padding: 10px;
+  width: 100%;
+}
+.face5 h2{
+  padding: 15px;
+}
+.span5{
+  grid-column: span 5;
+}
+
+
+
+@media screen and (max-width: 760px){
+  /* NAVIGATION */
+  .nav{ /* Tar bort navigationsmeny mellan sidorna i mobilläge */
+    display: none;
+  }
+  .overlay{ /* Navigation som bara syns i mobilläge med titel */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+  }
+  .overlay img{ /* Navigationsknapp för mobilläge */
+    width: 50px;
+    margin: 0 10px;
+
+  }
+  .overlay #overlaycontent{ /* Länkar för navigationsmenyn i mobilläge som bara syns när script aktiveras */
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #26667F;
+    width: 100%;
+    top: 80px;
+  }
+  .overlay a{
+    display: block;
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+  }
+nav{ 
+  padding: 10px;
+  display: flex;
+  background-color: #124170;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  }
+  .front h1{
+  font-size: 30px;
+  padding: 5px;
+  }
+  .front h3{
+  font-size: 20px;
+  padding: 5px;
+  }
+  .aktuellt h1{
+  padding-top: 30px;
+  font-size: 30px;
+  }
+  .oppethus{
+    height: 250px;
+  }
+  .oppethus h1{
+  font-size: 35px;
+  width: 70%;
+  padding: 20px;
+}
+
+
+
+  /* ALL */
+  .front{
+    grid-template-columns: 100%;
+    height: 30vh;
+  }
+  .front h2{
+    display: none;
+  }
+  .para{
+    padding: 10px;
+  }
+  .para h3{
+    font-size: 23px;
+  }
+  .para p{
+    font-size: 18px;
+  }
+  .face2{
+    grid-template-columns: 100%;
+    }
+  .aktuellt{
+  padding: 5px;
+  }
+
+
+
+  /* FOOTER */
+  footer{
+    width: 100%;
+    grid-template-columns: 45% 55%;
+    height: 300px;
+    font-size: 12px;
+  }
+  .nbg img{
+  width: 50%;
+  padding: 20px;
+}
+}
