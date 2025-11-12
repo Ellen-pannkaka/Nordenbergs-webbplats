@@ -150,6 +150,7 @@ nav ul li {
 html, body{
 width:100%;
 overflow-x:hidden;
+background-color: whitesmoke;
 }
 
 
@@ -162,7 +163,7 @@ overflow-x:hidden;
 }
 .para{
   color: black;
-  padding: 10px 10%;
+  padding: 5px 10%;
 }
 .para h3{
   font-size: 25px;
@@ -183,6 +184,13 @@ overflow-x:hidden;
 }
 .para h4{
   font-size: 20px;
+}
+.card{
+  background-color: #26667F;
+  width: 80%;
+  border: 15px solid #26667F;
+  opacity: 80%;
+  color: white;
 }
 
 
@@ -238,6 +246,18 @@ footer h3{
 .face2 {
   display: grid;
   grid-template-columns: 50% 50%;
+}
+.face5{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  padding: 10px;
+  width: 100%;
+}
+.face5 h2{
+  padding: 15px;
+}
+.span5{
+  grid-column: span 5;
 }
 
 
