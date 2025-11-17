@@ -160,6 +160,7 @@ background-color: whitesmoke;
   padding: 30vh 0 0 0;
   margin: auto;
   color: whitesmoke;
+  text-shadow: 2px 2px black;
 }
 .para{
   color: black;
@@ -174,6 +175,7 @@ background-color: whitesmoke;
 }
 .para a{
   color: black;
+  text-decoration: underline;
 }
 .para a:hover{
   color: darkblue;
