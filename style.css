@@ -17,7 +17,6 @@ nav{
   display: flex;
   background-color: #124170;
   height: 70px;
-  position: sticky;
   top: 0;
   width: 100%;
   z-index: 1;
@@ -110,14 +109,14 @@ nav ul li {
   padding: 10px;
 }
 .aktuellt{
-  background-color: white;
+  background-color: whitesmoke;
   display: grid;
   grid-template-columns: 33% 34% 33%;
   color: black;
   padding: 20px;
 }
 .aktuellt img{
-  width: 95%;
+  width: 80%;
   padding: 10px;
 }
 .aktuellt h1{
@@ -126,26 +125,29 @@ nav ul li {
 }
 .oppethus{
   background-color: #1D5A4B;
-  height: 300px;
+  height: 200px;
 }
 .oppethus h1{
   font-size: 50px;
-  margin: auto;
-  width: 30%;
+  text-align: center;
+  color: white;
   padding: 50px;
 }
-.oppethus p{
-  margin: 0 50px;
-  font-size: 20px;
-}
-.instagram{
+.instagram a{
   text-decoration: none;
   padding: 20px;
   color: black;
 }
-.instagram:hover{
+.instagram a:hover{
   text-decoration: underline;
-  color: darkgrey;
+  color: darkblue;
+}
+button{
+  font-size: 40px;
+  background-color: #1D5A4B;
+  color: white;
+  border: 3px solid black;
+  border-radius: 15px;
 }
 html, body{
 width:100%;
@@ -354,10 +356,6 @@ nav{
   }
   .face5{
     grid-template-columns: 50% 50%;
-  }
-  .span5{
-    grid-column: span 1;
-    background-color: #7cbfd9;
   }
   .card{
     grid-column: span 2;
