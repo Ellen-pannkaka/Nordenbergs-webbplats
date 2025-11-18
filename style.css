@@ -303,7 +303,6 @@ nav{
   display: flex;
   background-color: #124170;
   height: 70px;
-  position: sticky;
   top: 0;
   width: 100%;
   z-index: 1;
@@ -373,5 +372,5 @@ nav{
   .nbg img{
   width: 50%;
   padding: 20px;
-}
+  }
 }
