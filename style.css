@@ -291,6 +291,7 @@ footer h3{
     background-color: #26667F;
     width: 100%;
     top: 80px;
+    z-index: 1;
   }
   .overlay a{
     display: block;
