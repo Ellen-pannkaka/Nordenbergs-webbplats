@@ -175,26 +175,42 @@ overflow-y: scroll;
 }
 .para p{
   font-size: 20px;
-  padding: 0px 10px 0px 0px;
 }
 .para a{
   color: black;
   text-decoration: underline;
+  font-size: 20px;
 }
 .para a:hover{
   color: darkblue;
 }
 .para img{
-  max-height: 150px;
+  max-width: 150px;
   clip-path: circle(50%);
+}
+.para img:hover{
+  transform: scale(1.05);
 }
 .para h4{
   font-size: 20px;
 }
+.para h2{
+  margin: 15px 0 0 0;
+}
 .card{
   background-color: #7cbfd9;
   width: 80%;
-  border: 15px solid #7cbfd9;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.greencard{
+  background-color: #1D5A4B;
+  width: 80%;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  margin: 20px;
+  color: white;
 }
 
 
