@@ -374,6 +374,9 @@ nav{
   .para p{
     font-size: 18px;
   }
+  .para img{
+    max-width: 100px;
+  }
   .face2{
     grid-template-columns: 100%;
     }
